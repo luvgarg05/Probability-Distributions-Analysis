@@ -60,13 +60,17 @@ Parameters are estimated using **Maximum Likelihood Estimation (MLE)**.
 
 ## 📊 Estimated Parameters
 
-After optimization, the final parameters are:
+After Maximum Likelihood Estimation (MLE), the final learned parameters are:
 
-- **μ = 25.810838**
-- **λ = 0.0014605237**
-- **c = 0.0215615197**
+| Parameter | Value |
+|------------|------------|
+| **μ (Mean)** | 25.810838 |
+| **λ (Lambda)** | 0.0014605237 |
+| **c (Normalization Constant)** | 0.0215615197 |
 
-These values satisfy Gaussian normalization conditions.
+These values satisfy the Gaussian normalization conditions:
+λ = 1 / (2σ²)  
+c = √(λ / π)
 
 ---
 
