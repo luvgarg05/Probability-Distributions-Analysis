@@ -69,7 +69,9 @@ After Maximum Likelihood Estimation (MLE), the final learned parameters are:
 | **c (Normalization Constant)** | 0.0215615197 |
 
 These values satisfy the Gaussian normalization conditions:
-λ = 1 / (2σ²)   c = √(λ / π)
+
+λ = 1 / (2σ²) 
+c = √(λ / π)
 
 ---
 
