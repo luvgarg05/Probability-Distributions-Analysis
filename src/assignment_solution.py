@@ -98,22 +98,20 @@ print("c =", c, "\n")
 z_range = np.linspace(min(z), max(z), 500)
 pdf = c * np.exp(-lam * (z_range - mu) ** 2)
 
-# ---------------------------------------------------
-# PROFESSIONAL VISUAL PRESENTATION
-# ---------------------------------------------------
+
 
 import seaborn as sns
 sns.set_style("whitegrid")
 
 fig, axes = plt.subplots(2, 2, figsize=(14, 10))
 
-# 1️⃣ Original NO2 Distribution
+# Original NO2 Distribution
 axes[0, 0].hist(x, bins=50, density=True, alpha=0.7, color="#4C72B0")
 axes[0, 0].set_title("Original NO2 Distribution")
 axes[0, 0].set_xlabel("NO2")
 axes[0, 0].set_ylabel("Density")
 
-# 2️⃣ Transformation Function
+# Transformation Function
 x_sample = np.linspace(min(x), max(x), 500)
 z_sample = x_sample + a_r * np.sin(b_r * x_sample)
 
@@ -123,13 +121,13 @@ axes[0, 1].set_title("Transformation: z = x + a sin(bx)")
 axes[0, 1].set_xlabel("x")
 axes[0, 1].set_ylabel("z")
 
-# 3️⃣ Transformed Data Distribution
+# Transformed Data Distribution
 axes[1, 0].hist(z, bins=50, density=True, alpha=0.7, color="#55A868")
 axes[1, 0].set_title("Distribution of Transformed Variable (z)")
 axes[1, 0].set_xlabel("z")
 axes[1, 0].set_ylabel("Density")
 
-# 4️⃣ Fitted PDF vs Empirical
+# Fitted PDF vs Empirical
 z_range = np.linspace(min(z), max(z), 500)
 pdf = c * np.exp(-lam * (z_range - mu) ** 2)
 
