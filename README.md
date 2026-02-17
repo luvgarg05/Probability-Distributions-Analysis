@@ -70,7 +70,7 @@ After Maximum Likelihood Estimation (MLE), the final learned parameters are:
 
 These values satisfy the Gaussian normalization conditions:
 
-λ = 1 / (2σ²) 
+λ = 1 / (2σ²) , 
 c = √(λ / π)
 
 ---
