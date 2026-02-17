@@ -60,7 +60,7 @@ Parameters are estimated using **Maximum Likelihood Estimation (MLE)**.
 
 ## 📊 Estimated Parameters
 
-After optimization, the learned parameters are:
+After optimization, the final parameters are:
 
 - **μ = 25.810838**
 - **λ = 0.0014605237**
