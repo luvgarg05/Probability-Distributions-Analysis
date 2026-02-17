@@ -60,14 +60,24 @@ Parameters are estimated using **Maximum Likelihood Estimation (MLE)**.
 
 ## 📊 Estimated Parameters
 
-After optimization, the learned parameters are:
+## 📊 Estimated Parameters
 
-- **μ = 25.810838**
-- **λ = 0.0014605237**
-- **c = 0.0215615197**
+After running the model, the estimated parameters are:
 
-These values satisfy Gaussian normalization conditions.
+μ = 25.810838441686176  
+λ = 0.0014605237025044871  
+c = 0.021561519740336762  
 
+Rounded for reporting:
+
+- **μ ≈ 25.8108**
+- **λ ≈ 0.001461**
+- **c ≈ 0.021562**
+
+These values satisfy the Gaussian normalization condition and are consistent with:
+
+λ = 1 / (2σ²)  
+c = √(λ / π)
 ---
 
 ## 📊 Results
